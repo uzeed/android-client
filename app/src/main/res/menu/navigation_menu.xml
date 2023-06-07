@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:icon="@drawable/home"
+        android:id="@+id/homeMenu"
+        android:title="@string/home"
+        android:orderInCategory="1"/>
+
+    <item android:icon="@drawable/ic_favorite_black"
+        android:id="@+id/favoritosMenu"
+        android:title="@string/favorito"
+        android:orderInCategory="2"/>
+
+    <item android:icon="@drawable/list"
+        android:id="@+id/pendientesMenu"
+        android:title="@string/solicitudes"
+        android:orderInCategory="3"/>
+
+    <!--item android:icon="@drawable/chklist"
+        android:id="@+id/historialMenu"
+        android:title="@string/servicios"
+        android:orderInCategory="4"/-->
+
+    <item android:icon="@drawable/new_message"
+        android:id="@+id/messageMenu"
+        android:title="@string/message"
+        android:orderInCategory="4"/>
+</menu>

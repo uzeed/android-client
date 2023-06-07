@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.CityActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:id="@+id/ll_header"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/ibtn_arrow_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_arrow_back"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:background="@color/transparent"
+                android:tint="@color/LinkButton"/>
+
+            <TextView
+                android:id="@+id/tv_nombre_profesional"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/busqueda_profesionales"
+                android:textColor="@color/LinkButton"
+                android:layout_marginLeft="10dp"
+                android:textSize="16sp"
+                android:layout_gravity="center_vertical"/>
+
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/linearLayoutFindByCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/fondo_busqued_prof"
+                android:adjustViewBounds="true"
+                />
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rl_city">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="10dp">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.3">
+                        <TextView
+                            android:id="@+id/txtCity"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:text="@string/inputCity"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.7">
+                        <Spinner
+                            android:id="@+id/spnCity"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                        />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_city"
+                android:id="@+id/rl_genero">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:layout_marginTop="10dp">
+                        <TextView
+                            android:id="@+id/txtGender"
+                            android:textColor="@color/white"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:text="@string/inputGender"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginLeft="10dp"
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0.7"
+                        android:layout_marginTop="10dp">
+                        <Spinner
+                            android:id="@+id/spnGender"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginTop="5dp"
+                            android:spinnerMode="dropdown"
+                             />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_genero"
+                android:id="@+id/rl_switches"
+                android:layout_marginTop="10dp">
+
+                    <Switch
+                        android:id="@+id/schPremium"
+                        android:textColor="@color/white"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:checked="true"
+                        android:text="@string/inputPremium"
+                        android:layout_marginRight="10dp"
+                        android:track="@drawable/switch_drawable_track"
+                        android:thumb="@drawable/switch_drawable_thumb"/>
+                    <Switch
+                        android:id="@+id/schGold"
+                        android:textColor="@color/white"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:checked="true"
+                        android:layout_marginRight="10dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_below="@id/schPremium"
+                        android:layout_marginTop="10dp"
+                        android:text="@string/inputGold"
+                        android:track="@drawable/switch_drawable_track"
+                        android:thumb="@drawable/switch_drawable_thumb" />
+
+                <Switch
+                    android:id="@+id/schSilver"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/schGold"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:checked="true"
+                    android:text="@string/inputSilver"
+                    android:textColor="@color/white"
+                    android:thumb="@drawable/switch_drawable_thumb"
+                    android:track="@drawable/switch_drawable_track" />
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rl_switches"
+                android:layout_marginTop="10dp">
+
+                <Button
+                    android:id="@+id/btnSearchProfesional"
+                    android:background="@drawable/ripple"
+                    android:layout_width="175dp"
+                    android:layout_height="30dp"
+                    android:textColor="@color/white"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:text="@string/inputSearchProfesional"
+                    android:textSize="10dp"/>
+
+
+            </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/linearLayoutResultItems"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+
+            <FrameLayout
+                android:id="@+id/ResultItems_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/rv_List_item"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </FrameLayout>
+        </RelativeLayout>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbar_City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

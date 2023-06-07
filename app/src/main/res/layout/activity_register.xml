@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:id="@+id/rl_login"
+    tools:ignore="InvalidId">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/iv_logo_blanco"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_blanco"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical"
+        android:paddingTop="150dp">
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/creatucuenta"
+            android:textAlignment="textEnd"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16dp"/>
+
+        <LinearLayout
+            android:id="@+id/ll_edittexts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_register_email"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/putEmail"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16dp"
+                android:inputType="textEmailAddress"
+                android:background="@color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"></LinearLayout>
+
+            <EditText
+                android:id="@+id/et_register_nombre"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/putNombre"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16dp"
+                android:singleLine="true"
+                android:background="@color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"></LinearLayout>
+
+            <EditText
+                android:id="@+id/et_register_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/putContrasena"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                android:background="@color/transparent"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"></LinearLayout>
+
+            <EditText
+                android:id="@+id/et_register_repite_contrasena"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/putRepiteContrasena"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16dp"
+                android:inputType="textPassword"
+                android:background="@color/transparent"/>
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@id/ll_edittexts"
+            android:id="@+id/bt_registrar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple"
+            android:text="@string/registrar"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:textAllCaps="false"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+            />
+
+        <Button
+            android:id="@+id/bt_yatengocuenta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bt_registrar"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="5dp"
+            android:background="@color/transparent"
+            android:text="@string/yatengocuenta"
+            android:textColor="@color/white"
+            android:textAllCaps="false"/>
+    </LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbar_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

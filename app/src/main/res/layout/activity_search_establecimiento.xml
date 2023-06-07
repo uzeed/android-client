@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.SearchEstablecimientoActivity"
+    android:background="@drawable/fondo">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/ll_header"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ibtn_arrow_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_arrow_back"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="10dp"
+            android:background="@color/transparent"
+            android:tint="@color/white"/>
+
+        <TextView
+            android:id="@+id/tv_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Búsqueda de Night Clubs"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textAllCaps="true"
+            android:layout_gravity="center_vertical"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:weightSum="3"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_logo_blanco"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logosplash"
+            android:layout_gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_gradientgris"
+            android:layout_marginTop="15dp">
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="15dp"
+                    android:weightSum="1">
+                    <RadioButton
+                        android:id="@+id/rbtPorRango"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        android:text="POR RANGO"
+                        android:onClick="rbClick"
+                        android:textSize="10dp"
+                        android:button="@drawable/custome_radiobutton"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <SeekBar
+                        android:id="@+id/SeekBarDistance"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.6"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="30dp"
+                        android:layout_gravity="center_vertical"
+                        android:minHeight="2dp"
+                        android:maxHeight="2dp"
+                        android:thumb="@drawable/seekbar_establecimiento_thumb"
+                        android:progressDrawable="@drawable/seekbar_establecimiento_progress"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="10dp"
+                    android:weightSum="1">
+                    <RadioButton
+                        android:id="@+id/rbtPorCalificacion"
+                        android:layout_width="0dp"
+                        android:layout_weight="0.4"
+                        android:layout_height="wrap_content"
+                        android:onClick="rbClick"
+                        android:text="POR CALIFICACION"
+                        android:textSize="10dp"
+                        android:button="@drawable/custome_radiobutton"
+                        android:layout_marginLeft="10dp"
+                        android:layout_gravity="center_vertical"
+                        />
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.6">
+                        <RatingBar
+                            android:id="@+id/ratb_SeekCalificacionEstablecimiento"
+                            style="@style/MyRatingBar"
+                            android:layout_width="wrap_content"
+                            android:layout_height="30dp"
+                            android:numStars="5"
+                            android:rating="5"
+                            android:stepSize="1"
+                            android:layout_gravity="left"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <Button
+                android:id="@+id/BuscarEstablecimiento"
+                android:layout_width="200dp"
+                android:layout_centerVertical="true"
+                android:layout_height="35dp"
+                android:background="@drawable/ripple"
+                android:text="@string/BuscarEstablecimiento"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textSize="10dp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/linearLayoutMapEstablecimiento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearLayoutSeekEstablecimiento">
+            <FrameLayout
+                android:id="@+id/map_contentEstablecimiento"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </FrameLayout>
+        </RelativeLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
+    <ProgressBar
+        android:id="@+id/progressbar_SeekEstablecimiento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+</RelativeLayout>

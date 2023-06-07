@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--color name="colorPrimary">#333B83</color>
+    <color name="colorAccent">#ff4081</color-->
+    <color name="colorPrimaryDark">#512DA8</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="colorPink">#ff0066</color>
+    <color name="LinkButton">#918a8d</color>
+    <color name="colorCeleste">#709cd6</color>
+    <color name="colorNegro">#FF000000</color>
+    <color name="cajaTexto">#F0EDED</color>
+
+    <color name="colorPrimary">#0F0136</color>
+    <color name="colorAccent">#902465</color>
+
+    <color name="colorCorazones">#f01a89</color>
+    <color name="colorSeleccion">#bc68a6</color>
+
+    <color name="colorInicial">#180C53</color>
+    <color name="ColorFinal">#56408B</color>
+
+    <color name="online">#8bd6d0</color>
+    <color name="colorActioBarChat">#55307e</color>
+    <color name="colorMensajeChat">#760090</color>
+    <color name="colorGrisChat">#EAEAEA</color>
+
+</resources>

@@ -1,0 +1,84 @@
+<resources>
+    <string name="app_name">Uzeed</string>
+    <string name="home">Home</string>
+    <string name="profesional">Profesional</string>
+    <string name="favorito">Favoritos</string>
+    <string name="solicitudes">Solicitudes</string>
+    <string name="servicios">Historial</string>
+    <string name="add">Add</string>
+    <string name="person">Person</string>
+    <string name="message">Chat</string>
+    <string name="putEmail">E-mail</string>
+    <string name="putContrasena">Contraseña</string>
+    <string name="ingresa">Ingresa</string>
+    <string name="olvidaste_contrasena">Olvidaste tu contraseña?</string>
+    <string name="registrate">Regístrate</string>
+    <string name="yatengocuenta">Ya tengo una cuenta</string>
+    <string name="registrar">Registrar</string>
+    <string name="putRepiteContrasena">Repite Contraseña</string>
+    <string name="putNombre">Nombre Usuario</string>
+    <string name="input_email">Ingrese el E-mail</string>
+    <string name="input_contrasena">Ingrese la contraseña</string>
+    <string name="input_contrasena_min">Contraseña debe ser de mas de 6 caracteres</string>
+
+    <string name="invalid_username_passsoword">E-mail o contraseña inválidos</string>
+    <string name="authentication_error">Se produjo un error al realizar la autenticación</string>
+    <string name="input_nombre">Ingrese el nombre de usuario.</string>
+    <string name="contrasenas_no_coinciden">Las contraseñas no coinciden.</string>
+    <string name="register_error">Se produjo un error al realizar la registración. Intente nuevamente mas tarde.</string>
+    <string name="introduce_codigo">INTRODUCE EL CÓDIGO</string>
+    <string name="mensaje_verificacion_codigo">Hemos enviado un mail a tu cuenta con un código de verificación. Por favor introduce el código de 6 dígitos</string>
+    <string name="putVerificationCode">Código de Verificación</string>
+    <string name="verificar_codigo">Verificar Código</string>
+
+    <string name="ciudad_error">Se produjo un error al solicitar Ciudades. Intente nuevamente mas tarde.</string>
+    <string name="genero_error">Se produjo un error al solicitar Generos. Intente nuevamente mas tarde.</string>
+
+    <string name="calificacion_exitosa">Calificación generada exitosamente.</string>
+    <string name="calificacion_error">Se produjo un error al calificar. Intente nuevamente mas tarde.</string>
+    <string name="solicitud_exitosa">Solicitud generada exitosamente.</string>
+    <string name="solicitud_error">Se produjo un error al solicitar servicio. Intente nuevamente mas tarde.</string>
+    <string name="cancelacion_exitosa">Cancelación generada exitosamente.</string>
+    <string name="cancelacion_error">Se produjo un error al cancelar. Intente nuevamente mas tarde.</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="uzeed">Uzeed</string>
+    <string name="creatucuenta">Crea tu cuenta</string>
+    <string name="QueEstasBuscando">¿Que estás buscando?</string>
+    <string name="invalid_verification_code">Código de verificación inválido</string>
+    <string name="recuperacion_contrasena">Recuperación de contraseña</string>
+    <string name="mensaje_recuperacion_contrasena">Hemos enviado un código de verificación a tu cuenta. Ingresa el código y la nueva contraseña.</string>
+    <string name="recuperar_contrasena">Recuperar contraseña</string>
+    <string name="mensaje_ingrese_cta_mail">Ingrese su cuenta de mail</string>
+    <string name="password_recovery_failed">Se produjo un error al realizar la recuperación de contraseña. Intente nuevamente mas tarde.</string>
+    <string name="user_already_exist">El usuario ya existe.</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="button_buscar_ciudad">Buscar por Ciudad</string>
+    <string name="inputCity">Ciudad</string>
+    <string name="inputGender">Genero</string>
+    <string name="inputPremium">Premium</string>
+    <string name="inputGold">Gold</string>
+    <string name="inputSilver">Silver</string>
+    <string name="inputSearchProfesional">Buscar</string>
+    <string name="btnPerfil">Ver Perfil</string>
+    <string name="btnEnviarMensaje">Enviar Mensaje</string>
+    <string name="btnCalificar">Calificar</string>
+    <string name="btnCancelar">Cancelar</string>
+    <string name="inputRango">Define tu rango</string>
+    <string name="inputCalificacion">Define la calificación</string>
+    <string name="favoritos">Listado de favoritos</string>
+    <string name="chats">Usuarios de Chats</string>
+    <string name="listadosolicitudes">Listado de Solicitudes</string>
+    <string name="informacion_profesional">INFORMACIÓN PROFESIONAL</string>
+    <string name="ver_fotos">Ver Fotos</string>
+    <string name="perfil_activo">online</string>
+    <string name="perfil_inactivo">offline</string>
+    <string name="busqueda_profesionales">Búsqueda de Profesionales</string>
+    <string name="buscar_profesional">Buscar Profesionales</string>
+    <string name="BuscarEstablecimiento">Buscar</string>
+    <string name="title_activity_image_slider">ImageSliderActivity</string>
+    <string name="moteles">Moteles</string>
+    <string name="ingrese_comentario">Ingrese un comentario</string>
+
+</resources>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activities.LoginActivity"
+    android:id="@+id/rl_login"
+    tools:ignore="InvalidId">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/fondo"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"/>
+
+    <ImageView
+        android:id="@+id/iv_logo_blanco"
+        android:layout_width="125dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_blanco"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:layout_below="@+id/iv_logo_blanco"
+        android:layout_marginTop="40dp"
+        >
+
+        <TextView
+            android:id="@+id/tv_introduce_codigo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/introduce_codigo"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            android:textSize="16dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_mensaje_verficacion_codigo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_introduce_codigo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:text="@string/mensaje_verificacion_codigo"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-light"
+            />
+        <LinearLayout
+            android:id="@+id/ll_edittexts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/white_border"
+            android:layout_below="@id/tv_mensaje_verficacion_codigo"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_verification_code"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:hint="@string/putVerificationCode"
+                android:padding="10dp"
+                android:textColor="@color/white"
+                android:textColorHint="@color/white"
+                android:fontFamily="sans-serif-light"
+                android:textSize="16dp"
+                android:inputType="number"
+                android:background="@color/transparent"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/white"></LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_below="@id/ll_edittexts"
+            android:id="@+id/bt_verification_code"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/ripple"
+            android:text="@string/verificar_codigo"
+            android:textColor="@color/white"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="30dp"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:fontFamily="sans-serif-light"
+            android:textAppearance="@style/TextAppearance.AppCompat.Medium"/>
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progressbar_verification_code"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+
+</RelativeLayout>
